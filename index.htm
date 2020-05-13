@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<title>Customer Data</title>
+<body>
+  <form action = "http://127.0.0.1:8081/addcustomer" method = "POST">
+<h2>Customer Form</h2>
+
+
+
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value=""> <br><br>
+  <label for="mname">Middle name:</label>
+  <input type="text" id="mname" name="mname" value=""><br><br>
+  <label for="lname">Last name  :</label>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label> </br><br>
+  
+  
+  <label for="birthday">Birthday:</label>
+   <input type="date" id="birthday" name="birthday" value="2000-01-01"> <br><br>
+  
+
+  <label for="email1">Email</label>
+  <input type="email" id = "email1" name= "email1" value= ""> <br><br>
+  
+  
+  <input type="checkbox" id="isMarried" name="isMarried" >
+  <label for="isMarried">isMarried</label> <br>
+
+  <label for="Anniversary Date">Anniversary Date:</label>
+  <input type="date" id="anniversayDate" name="anniversayDate" value="2010-01-01"> <br>
+
+  <input type="checkbox" id="isOnFacebook" name="isOnFacebook" >
+  <label for="isOnFacebook">isOnFacebook</label> <br>
+  
+  <input type="checkbox" id="isOnInstaGram" name="isOnInstaGram" >
+  <label for="isOnInstaGram">isOnInstaGram</label> <br>
+
+  <input type="checkbox" id="isOnWhatsApp" name="isOnWhatsApp" >
+  <label for="isOnWhatsApp">isOnWhatsApp</label> <br>
+
+  <input type="checkbox" id="isOnLinkendin" name="isOnLinkendin" >
+  <label for="isOnLinkendin">isOnLinkendin</label> <br>
+
+  <input type="checkbox" id="isOnTwitter" name="isOnTwitter" >
+  <label for="isOnTwitter">isOnTwitter</label> <br>
+
+  <label for="countrycode">Country Code</label>
+  <input list="countrycodes" name="countrycode" id="countrycode">
+  <datalist id="countrycodes">
+    <option value="India(+91)">
+    <option value="USA">
+    <option value="UK">
+    <option value="Canada">
+    <option value="Australia">
+  </datalist>
+
+
+  <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+   <br>
+   <br>
+   <br>
+   
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
